@@ -3,15 +3,17 @@
 [ext_resource type="Script" uid="uid://hmkrjv7ebc36" path="res://Enemies/Rock/Rock.cs" id="1_k7icd"]
 
 [sub_resource type="Gradient" id="Gradient_k7icd"]
-colors = PackedColorArray(0.36725605, 0.28301808, 0.28216043, 1, 0.6402972, 0.6402972, 0.6402971, 1)
+colors = PackedColorArray(0.061214164, 0.33279172, 0.4603455, 1, 0.55943817, 0.6604678, 0.69691885, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_1vivr"]
 gradient = SubResource("Gradient_k7icd")
-fill_from = Vector2(0.49829352, 1)
-fill_to = Vector2(0.12627986, 0)
+fill_from = Vector2(0.5897436, 1)
+fill_to = Vector2(0.47863248, 0.4045584)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_1vivr"]
-radius = 30.149628
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k7icd"]
+size = Vector2(48, 49)
+
 
 [node name="Rock" type="Area2D" unique_id=739586183]
 collision_layer = 3
@@ -23,4 +25,5 @@ metadata/_custom_type_script = "uid://hmkrjv7ebc36"
 texture = SubResource("GradientTexture2D_1vivr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=700212114]
-shape = SubResource("CircleShape2D_1vivr")
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_k7icd")
